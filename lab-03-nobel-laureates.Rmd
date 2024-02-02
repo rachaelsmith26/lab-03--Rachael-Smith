@@ -1,6 +1,6 @@
 ---
 title: "Lab 03 - Nobel laureates"
-name: "Rachael Smith" 
+author name: "Rachael Smith" 
 output: 
   tufte::tufte_html:
     css: ../lab.css
