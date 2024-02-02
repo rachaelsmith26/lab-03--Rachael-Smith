@@ -280,7 +280,10 @@ This means you'll need to define this data frame in your R Markdown document, ev
     -   Your visualization should be faceted by category.
     -   For each facet you should have two bars, one for winners in the US and one for Other.
     -   Flip the coordinates so the bars are horizontal, not vertical.
-
+ggplot(nobel_living_science, aes(x=category, y=country_us)) + 
++     geom_bar(stat = "identity") +
++     coord_flip()
+The buzz feed headline was supported by the data.
 🧶 ✅ ⬆️ Knit, *commit, and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.d*
 
 ## But of those US-based Nobel laureates, many were born in other countries
