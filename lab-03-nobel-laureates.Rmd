@@ -1,12 +1,19 @@
 ---
 title: "Lab 03 - Nobel laureates"
+name: "Rachael Smith" 
 output: 
   tufte::tufte_html:
     css: ../lab.css
     tufte_variant: "envisioned"
     highlight: pygments
 link-citations: true
+editor_options: 
+  markdown: 
+    wrap: sentence
 ---
+```{r}
+
+```
 
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(eval = TRUE)
@@ -45,15 +52,17 @@ So our first task today is to walk you through a merge conflict!
 
 Git will put conflict markers in your code that look like:
 
-    <<<<<<< HEAD 
+```         
+<<<<<<< HEAD 
 
-    See also: [dplyr documentation](https://dplyr.tidyverse.org/)   
+See also: [dplyr documentation](https://dplyr.tidyverse.org/)   
 
-    ======= 
+======= 
 
-    See also [ggplot2 documentation](https://ggplot2.tidyverse.org/)  
+See also [ggplot2 documentation](https://ggplot2.tidyverse.org/)  
 
-    >>>>>>> some1alpha2numeric3string4
+>>>>>>> some1alpha2numeric3string4
+```
 
 The `===`s separate *your* changes (top) from *their* changes (bottom).
 
